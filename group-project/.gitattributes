@@ -1,4 +1,4 @@
 # Saved artifacts must retain the bytes recorded in artifact-manifest.json.
 model/*.joblib -text
 model/*.pkl -text
-model/*.json -text
+model/*.json -text whitespace=cr-at-eol

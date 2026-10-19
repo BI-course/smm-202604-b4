@@ -13,6 +13,8 @@ python_version: '3.12'
 
 The aim is to let a domain expert enter a new example, inspect a prediction, and give feedback. The apps load saved models; they do not retrain them when a user clicks a button.
 
+**Live Streamlit app:** <https://b4-model-validation-nadine.streamlit.app/>. All four tabs were tested with real predictions on 19 October 2026. It deploys from `feature/b4-model-validation`, using `group-project/app.py` and Python 3.12. The app's sharing panel confirms public access. See `deployment-status.json` for the verified examples and remaining work.
+
 | Your model | New inputs | Output |
 | --- | --- | --- |
 | Regression | Study, attendance and student-profile fields | Estimated exam score |
@@ -56,7 +58,7 @@ The first three rebuilt artifacts use the original notebook recipes. The recover
 - Model-file checksums agree with `artifact-manifest.json`.
 - Regression RMSE, bank cluster sizes and pharmacy rule counts match the recorded notebook results at the documented precision.
 - The Docker Compose configuration parses successfully. Docker's engine was not running, so a Docker build and reverse-proxy run have not been verified.
-- No replacement public app has been deployed yet. The supplied old Streamlit link showed an access/not-found page in this browser; it might be restricted, removed, or an outdated URL.
+- The replacement public Streamlit app is live at <https://b4-model-validation-nadine.streamlit.app/>; all four tabs returned the expected example results. Render and Hugging Face deployments of the group artifacts remain pending.
 
 Run the checks again from this folder:
 

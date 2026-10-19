@@ -1,0 +1,24 @@
+{
+  "platform": "Streamlit Community Cloud",
+  "url": "https://b4-model-validation-nadine.streamlit.app/",
+  "repository": "BI-course/smm-202604-b4",
+  "branch": "feature/b4-model-validation",
+  "entry_point": "group-project/app.py",
+  "python_version": "3.12",
+  "visibility": "public",
+  "verification_date": "2026-10-19",
+  "verification_method": "Real form submissions through the public Streamlit app",
+  "verified_examples": {
+    "Exam score": "Predicted final exam score: 91.78",
+    "Insurance claim": "Predicted claim category: Fraudulent",
+    "Bank accounts": "Cluster 2: High-balance established accounts",
+    "Pharmacy basket": ["Baby Diapers", "Sunscreen SPF50"]
+  },
+  "remaining": [
+    "Pull request review and merge",
+    "Group API deployment to Render",
+    "Gradio deployment to Hugging Face Spaces",
+    "Docker and Nginx execution demonstration",
+    "Submission video and individual member contributions"
+  ]
+}

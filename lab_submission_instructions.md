@@ -46,6 +46,8 @@
 
 ## Chosen Level of Difficulty
 
+**Implementation:** [Group B4 serving project](group-project/README.md), using `group-project/api.py` and the four artifacts in `group-project/model/`. The public Streamlit app has been tested on all four tabs; other deployment requirements remain listed in [deployment status](group-project/deployment-status.json).
+
 **Specify the chosen level of difficulty** (baseline, intermediate, or advanced):
 
 ## Video Demonstration
@@ -72,7 +74,7 @@ Fill in only the rows that apply to your chosen difficulty level (see Part C bel
 |:--------------------------------------------------|:--------|
 | Render (the full `api.py`, all endpoints)         |         |
 | Hugging Face Space (Gradio, one tab per model)    |         |
-| Streamlit Community Cloud app (one tab per model) |         |
+| Streamlit Community Cloud app (one tab per model) | https://b4-model-validation-nadine.streamlit.app/ |
 
 ---
 

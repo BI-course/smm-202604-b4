@@ -1,0 +1,44 @@
+{
+  "model": "pharmacy-recommender",
+  "inputs": {
+    "cart": [
+      "Baby Lotion",
+      "Aloe Vera Gel"
+    ],
+    "top_n": 3
+  },
+  "output": {
+    "cart": [
+      "Baby Lotion",
+      "Aloe Vera Gel"
+    ],
+    "recommendations": [
+      {
+        "item_id": "D15",
+        "item_name": "Baby Diapers",
+        "rule_confidence": 0.6102941176470589,
+        "lift": 4.450861700612449,
+        "support": 0.08266932270916334,
+        "best_rule": "R05",
+        "matching_rules": [
+          "R05"
+        ],
+        "pharmacist_review": false
+      },
+      {
+        "item_id": "D08",
+        "item_name": "Sunscreen SPF50",
+        "rule_confidence": 0.5776699029126214,
+        "lift": 4.074805029444533,
+        "support": 0.07901726427622842,
+        "best_rule": "R07",
+        "matching_rules": [
+          "R07"
+        ],
+        "pharmacist_review": false
+      }
+    ],
+    "meaning": "Co-purchase patterns; not medical advice or proof of product suitability."
+  },
+  "expert_feedback": ""
+}

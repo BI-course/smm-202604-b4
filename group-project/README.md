@@ -15,6 +15,8 @@ The aim is to let a domain expert enter a new example, inspect a prediction, and
 
 **Live Streamlit app:** <https://b4-model-validation-nadine.streamlit.app/>. All four tabs were tested with real predictions on 19 October 2026. It deploys from `feature/b4-model-validation`, using `group-project/app.py` and Python 3.12. The app's sharing panel confirms public access. See `deployment-status.json` for the verified examples and remaining work.
 
+**Live Render API and HTML demo:** <https://b4-group-models-nadine.onrender.com/demo>. All four API endpoints returned HTTP 200 with the expected examples on 19 October 2026. The service uses the same branch and artifacts, the Free plan, Python 3.12.14, and one Gunicorn worker. Saved public responses are in `deployment-evidence/render-public-results.json`. Auto-deploy is off for this public-repository connection; deploy future code changes manually in Render.
+
 | Your model | New inputs | Output |
 | --- | --- | --- |
 | Regression | Study, attendance and student-profile fields | Estimated exam score |
@@ -58,7 +60,7 @@ The first three rebuilt artifacts use the original notebook recipes. The recover
 - Model-file checksums agree with `artifact-manifest.json`.
 - Regression RMSE, bank cluster sizes and pharmacy rule counts match the recorded notebook results at the documented precision.
 - The Docker Compose configuration parses successfully. Docker's engine was not running, so a Docker build and reverse-proxy run have not been verified.
-- The replacement public Streamlit app is live at <https://b4-model-validation-nadine.streamlit.app/>; all four tabs returned the expected example results. Render and Hugging Face deployments of the group artifacts remain pending.
+- The public Streamlit app and Render API are live; all four models returned the expected example results on each. Hugging Face deployment remains pending.
 
 Run the checks again from this folder:
 
@@ -107,7 +109,7 @@ The optional HTML forms are at **/demo**. They call the API on the same origin, 
 After deployment, test all four endpoints from PowerShell:
 
 ```powershell
-.\Test-API.ps1 -BaseUrl 'https://YOUR-SERVICE.onrender.com'
+.\Test-API.ps1 -BaseUrl 'https://b4-group-models-nadine.onrender.com'
 ```
 
 Local API launcher: `Start-My-Group-API.cmd` in the parent folder. The local API is at <http://127.0.0.1:5001>, with the forms at <http://127.0.0.1:5001/demo>. [Render's Flask deployment guide](https://render.com/docs/deploy-flask).

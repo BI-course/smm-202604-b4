@@ -14,9 +14,22 @@
     "Bank accounts": "Cluster 2: High-balance established accounts",
     "Pharmacy basket": ["Baby Diapers", "Sunscreen SPF50"]
   },
+  "render": {
+    "url": "https://b4-group-models-nadine.onrender.com",
+    "demo_url": "https://b4-group-models-nadine.onrender.com/demo",
+    "service_id": "srv-dbatstdg1s2s73dh165g",
+    "deployed_commit": "166baea990c85559f3817a167239a88e19343894",
+    "root_directory": "group-project",
+    "python_version": "3.12.14",
+    "plan": "Free",
+    "auto_deploy": false,
+    "health_check_path": "/",
+    "verification_date": "2026-10-19",
+    "verification_method": "Four real HTTPS POST requests from the student laptop to the public service, each returned HTTP 200",
+    "evidence": "deployment-evidence/render-public-results.json"
+  },
   "remaining": [
     "Pull request review and merge",
-    "Group API deployment to Render",
     "Gradio deployment to Hugging Face Spaces",
     "Docker and Nginx execution demonstration",
     "Submission video and individual member contributions"

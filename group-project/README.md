@@ -13,6 +13,8 @@ python_version: '3.12'
 
 The aim is to let a domain expert enter a new example, inspect a prediction, and give feedback. The apps load saved models; they do not retrain them when a user clicks a button.
 
+For a plain-language explanation and a submission-video outline, read [STUDENT-WALKTHROUGH.md](STUDENT-WALKTHROUGH.md).
+
 **Live Streamlit app:** <https://b4-model-validation-nadine.streamlit.app/>. All four tabs were tested with real predictions on 19 October 2026. It deploys from `feature/b4-model-validation`, using `group-project/app.py` and Python 3.12. The app's sharing panel confirms public access. See `deployment-status.json` for the verified examples and remaining work.
 
 **Live Render API and HTML demo:** <https://b4-group-models-nadine.onrender.com/demo>. All four API endpoints returned HTTP 200 with the expected examples on 19 October 2026. The service uses the same branch and artifacts, the Free plan, Python 3.12.14, and one Gunicorn worker. Saved public responses are in `deployment-evidence/render-public-results.json`. Auto-deploy is off for this public-repository connection; deploy future code changes manually in Render.
@@ -59,8 +61,8 @@ The first three rebuilt artifacts use the original notebook recipes. The recover
 - Basic missing-input and invalid-basket requests return clear HTTP 400 errors.
 - Model-file checksums agree with `artifact-manifest.json`.
 - Regression RMSE, bank cluster sizes and pharmacy rule counts match the recorded notebook results at the documented precision.
-- The Docker Compose configuration parses successfully. Docker's engine was not running, so a Docker build and reverse-proxy run have not been verified.
-- The public Streamlit app and Render API are live; all four models returned the expected example results on each. Hugging Face deployment remains pending.
+- Docker built successfully and both services ran. All four requests through Nginx at `http://127.0.0.1:8081` returned HTTP 200 with the same saved validation results. A missing-input request returned HTTP 400. The four model hashes inside the container match `artifact-manifest.json`. Evidence is in `deployment-evidence/docker-nginx-results.json` and `deployment-evidence/docker-environment.json`.
+- The public Streamlit app and Render API are live; all four models returned the expected example results on each. Hugging Face deployment remains pending because this account's Space setup page requires a paid plan for Gradio hosting.
 
 Run the checks again from this folder:
 
@@ -83,6 +85,8 @@ At <https://share.streamlit.io>, choose **Create app**, select that repository/b
 ### Hugging Face Spaces
 
 Create a Gradio Space if your account has suitable hosting access. Upload this folder's contents, with `model/` preserved. The README metadata points Hugging Face at **gradio_app.py**. The models use CPU inference. Check available hardware and account eligibility on the platform; a local GPU installation is unnecessary. Test all four tabs after the build. [Spaces documentation](https://huggingface.co/docs/hub/spaces-overview).
+
+On 19 October 2026, the signed-in account's [new Space page](https://huggingface.co/new-space) disabled the Gradio and Docker choices and displayed "Gradio and Docker Spaces require a paid plan". No Space was created and no subscription was purchased. The prepared Gradio callbacks have passed locally; a public Gradio deployment has not been verified. Use an account with suitable hosting access to complete the Advanced tier.
 
 Local Gradio launcher: `Start-My-Group-Gradio.cmd` in the parent folder.
 
@@ -119,11 +123,11 @@ Local API launcher: `Start-My-Group-API.cmd` in the parent folder. The local API
 Start Docker Desktop first. From this folder:
 
 ```powershell
-docker compose up --build -d
+docker compose -p b4-model-validation up --build -d
 .\Test-API.ps1 -BaseUrl 'http://127.0.0.1:8081'
 ```
 
-Nginx forwards requests to Gunicorn. Open <http://127.0.0.1:8081/demo> for the HTML forms. This step is prepared, but it has not been run successfully on the laptop yet.
+Nginx forwards requests to Gunicorn. Open <http://127.0.0.1:8081/demo> for the HTML forms. This setup was built and tested successfully on the laptop on 19 October 2026. The verified run used Docker Engine 29.4.3, Python 3.12.15, Gunicorn 26.2.0 and Nginx 1.30.6. Only Nginx's port is published to the laptop; Gunicorn remains on the Docker network.
 
 ## Before submitting
 

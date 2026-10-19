@@ -1,0 +1,69 @@
+{
+  "platform": "Docker with Nginx and Gunicorn",
+  "base_url": "http://127.0.0.1:8081",
+  "verified_at_utc": "2026-10-19T13:10:08.2000105Z",
+  "compose_project": "b4-model-validation",
+  "method": "Four real POST requests through the host port mapped only to the Nginx container",
+  "results": {
+    "student-exam-score-regressor": {
+      "status_code": 200,
+      "response": {
+        "predicted_final_exam_score": 91.781
+      }
+    },
+    "insurance-fraud-classifier": {
+      "status_code": 200,
+      "response": {
+        "category": "Fraudulent",
+        "class_probabilities": {
+          "0": 0.031854,
+          "1": 0.968146
+        },
+        "predicted_class": 1
+      }
+    },
+    "bank-account-segmenter": {
+      "status_code": 200,
+      "response": {
+        "assigned_cluster": 2,
+        "segment": "High-balance established accounts"
+      }
+    },
+    "pharmacy-recommender": {
+      "status_code": 200,
+      "response": {
+        "cart": [
+          "Baby Lotion",
+          "Aloe Vera Gel"
+        ],
+        "meaning": "Co-purchase patterns; not medical advice or proof of product suitability.",
+        "recommendations": [
+          {
+            "best_rule": "R05",
+            "item_id": "D15",
+            "item_name": "Baby Diapers",
+            "lift": 4.450861700612449,
+            "matching_rules": [
+              "R05"
+            ],
+            "pharmacist_review": false,
+            "rule_confidence": 0.6102941176470589,
+            "support": 0.08266932270916334
+          },
+          {
+            "best_rule": "R07",
+            "item_id": "D08",
+            "item_name": "Sunscreen SPF50",
+            "lift": 4.074805029444533,
+            "matching_rules": [
+              "R07"
+            ],
+            "pharmacist_review": false,
+            "rule_confidence": 0.5776699029126214,
+            "support": 0.07901726427622842
+          }
+        ]
+      }
+    }
+  }
+}

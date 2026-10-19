@@ -18,5 +18,6 @@ For Render, set Root Directory to `group-project` and follow its README.
 For Hugging Face Spaces, upload the contents of `group-project` as the Space repository root.
 
 The Streamlit and Render deployment URLs are recorded in `group-project/deployment-status.json`.
-Hugging Face deployment, Docker execution, the demonstration video, and individual
+Docker with Gunicorn and Nginx has also passed all four requests at `http://127.0.0.1:8081`.
+Hugging Face deployment (this account requires paid Gradio hosting access), the demonstration video, and individual
 member contributions still need to be completed and recorded in the course submission.

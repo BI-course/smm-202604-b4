@@ -28,10 +28,25 @@
     "verification_method": "Four real HTTPS POST requests from the student laptop to the public service, each returned HTTP 200",
     "evidence": "deployment-evidence/render-public-results.json"
   },
+  "docker": {
+    "status": "verified",
+    "url": "http://127.0.0.1:8081",
+    "compose_project": "b4-model-validation",
+    "verification_date": "2026-10-19",
+    "verification_method": "Four real POST requests through Nginx returned HTTP 200 and matched local validation; a missing-input request returned HTTP 400; container artifact hashes matched the manifest",
+    "results_evidence": "deployment-evidence/docker-nginx-results.json",
+    "environment_evidence": "deployment-evidence/docker-environment.json"
+  },
+  "hugging_face": {
+    "status": "not_deployed",
+    "checked_date": "2026-10-19",
+    "blocker": "The signed-in account's new Space page disables Gradio and Docker hosting and requires a paid plan. No purchase was made.",
+    "prepared_entry_point": "gradio_app.py",
+    "local_callbacks": "all four verified"
+  },
   "remaining": [
     "Pull request review and merge",
-    "Gradio deployment to Hugging Face Spaces",
-    "Docker and Nginx execution demonstration",
+    "Gradio deployment to Hugging Face Spaces if attempting Advanced; this account requires paid hosting access",
     "Submission video and individual member contributions"
   ]
 }

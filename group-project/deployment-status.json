@@ -1,4 +1,5 @@
 {
+  "chosen_difficulty": "Intermediate",
   "platform": "Streamlit Community Cloud",
   "url": "https://b4-model-validation-nadine.streamlit.app/",
   "repository": "BI-course/smm-202604-b4",
@@ -46,7 +47,6 @@
   },
   "remaining": [
     "Pull request review and merge",
-    "Gradio deployment to Hugging Face Spaces if attempting Advanced; this account requires paid hosting access",
     "Submission video and individual member contributions"
   ]
 }

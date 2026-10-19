@@ -48,7 +48,9 @@
 
 **Implementation:** [Group B4 serving project](group-project/README.md), using `group-project/api.py` and the four artifacts in `group-project/model/`. The public Streamlit app and Render API have each been tested with all four models; other deployment requirements remain listed in [deployment status](group-project/deployment-status.json).
 
-**Specify the chosen level of difficulty** (baseline, intermediate, or advanced):
+**Specify the chosen level of difficulty** (baseline, intermediate, or advanced): **Intermediate**
+
+The local API, Docker/Gunicorn/Nginx deployment, and public Render API have each passed requests for all four models. See [deployment evidence](group-project/deployment-status.json) and the [video walkthrough guide](group-project/STUDENT-WALKTHROUGH.md). The required video link and actual member contributions still need to be supplied.
 
 ## Video Demonstration
 
@@ -74,7 +76,9 @@ Fill in only the rows that apply to your chosen difficulty level (see Part C bel
 |:--------------------------------------------------|:--------|
 | Render (the full `api.py`, all endpoints)         | https://b4-group-models-nadine.onrender.com |
 | Hugging Face Space (Gradio, one tab per model)    |         |
-| Streamlit Community Cloud app (one tab per model) | https://b4-model-validation-nadine.streamlit.app/ |
+| Streamlit Community Cloud app (one tab per model) |         |
+
+An additional Streamlit app is available for practice at <https://b4-model-validation-nadine.streamlit.app/>. It is outside the selected Intermediate tier. Hugging Face hosting is not required for this tier.
 
 ---
 

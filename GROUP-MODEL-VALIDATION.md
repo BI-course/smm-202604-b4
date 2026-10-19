@@ -19,5 +19,6 @@ For Hugging Face Spaces, upload the contents of `group-project` as the Space rep
 
 The Streamlit and Render deployment URLs are recorded in `group-project/deployment-status.json`.
 Docker with Gunicorn and Nginx has also passed all four requests at `http://127.0.0.1:8081`.
-Hugging Face deployment (this account requires paid Gradio hosting access), the demonstration video, and individual
-member contributions still need to be completed and recorded in the course submission.
+The selected tier is **Intermediate**. Its technical deployment requirements are verified.
+The demonstration video and individual member contributions still need to be supplied in the course submission,
+and the draft pull request awaits final review. Hugging Face hosting belongs to the optional Advanced tier.

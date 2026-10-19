@@ -15,6 +15,8 @@ The aim is to let a domain expert enter a new example, inspect a prediction, and
 
 For a plain-language explanation and a submission-video outline, read [STUDENT-WALKTHROUGH.md](STUDENT-WALKTHROUGH.md).
 
+**Selected submission tier: Intermediate.** The local API, Docker/Gunicorn/Nginx setup and public Render API have passed all four model examples. The required video and real member contributions still need to be added. Streamlit is an additional working demo; Hugging Face hosting is outside this selected tier.
+
 **Live Streamlit app:** <https://b4-model-validation-nadine.streamlit.app/>. All four tabs were tested with real predictions on 19 October 2026. It deploys from `feature/b4-model-validation`, using `group-project/app.py` and Python 3.12. The app's sharing panel confirms public access. See `deployment-status.json` for the verified examples and remaining work.
 
 **Live Render API and HTML demo:** <https://b4-group-models-nadine.onrender.com/demo>. All four API endpoints returned HTTP 200 with the expected examples on 19 October 2026. The service uses the same branch and artifacts, the Free plan, Python 3.12.14, and one Gunicorn worker. Saved public responses are in `deployment-evidence/render-public-results.json`. Auto-deploy is off for this public-repository connection; deploy future code changes manually in Render.

@@ -1,5 +1,7 @@
 # Understand and demonstrate your B4 serving lab
 
+**Your selected tier is Intermediate.** Record the local API, the same API through Docker/Nginx, and the public Render API. Each must return a prediction for all four models. The public Streamlit app is available as an extra demo. A Hugging Face Space is not required for your selected tier.
+
 The class activity takes models your group already trained and lets other people try them. A domain expert enters a new example, checks whether the result makes sense, and records feedback. Starting these apps loads the saved files in `model/`; clicking a prediction button does not train a new model.
 
 ## What each part does
@@ -55,16 +57,14 @@ Only describe a deployment as working after showing it working in your recording
 | Approximate time | Show and explain |
 | --- | --- |
 | 0:00–1:00 | Introduce the group and the four tasks. Show `api.py`, `predictions.py`, and `model/`. Explain that artifacts load at startup. |
-| 1:00–2:30 | Run the local API and the first PowerShell command above. Show a successful request and response for every model. |
-| 2:30–4:00 | For Intermediate or Advanced, show the two running Docker services, then test port 8081. Explain Nginx → Gunicorn → Flask → saved model. |
-| 4:00–5:00 | Test the public Render API. Show its public address and responses. |
-| 5:00–6:30 | For Advanced, open the public Streamlit app and make one prediction on each of its four tabs. |
-| 6:30–8:00 | For Advanced, open the public Hugging Face Space and make one prediction on each of its four tabs. Complete this deployment before recording this part. |
-| 8:00–9:00 | Show the HTML form and basic invalid-input handling. Explain one result and how an expert would give feedback. |
-| 9:00–9:30 | State each member's actual contribution and what each person learned. |
+| 1:00–3:00 | Run the local API and the first PowerShell command above. Show a successful request and response for every model. |
+| 3:00–5:00 | Show the two running Docker services, then test port 8081. Explain Nginx → Gunicorn → Flask → saved model. |
+| 5:00–7:00 | Test the public Render API. Show its public address and successful responses for all four models. |
+| 7:00–8:00 | Explain one prediction and how an expert could review it. You may briefly show the HTML or Streamlit form as extra work. |
+| 8:00–9:00 | State each member's actual contribution and what each person learned. |
 
 Public links and remaining deployment work are recorded in `deployment-status.json`. Put the final video link, chosen tier, names, student IDs, and honest individual contributions in the repository's `lab_submission_instructions.md`. Check the lecturer can view the video. Keep the video itself out of the Git repository.
 
-The local API, Docker/Nginx API and public Render API have passed all four example requests. These cover the Intermediate technical deployment requirements. The public Streamlit app is also verified. The Advanced tier still needs a public Gradio Space: the checked Hugging Face account currently requires paid hosting access for that SDK. A prepared local app does not count as a deployed Space.
+The local API, Docker/Nginx API and public Render API have passed all four example requests. These cover the Intermediate technical deployment requirements. The public Streamlit app is also verified. The optional Advanced tier would need a public Gradio Space; the checked Hugging Face account currently requires paid hosting access for that SDK.
 
 Before presenting, be ready to explain: what input each model needs, what its output means, why all hosts use identical saved files, and how the API differs from the user interface.

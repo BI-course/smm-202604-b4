@@ -1,0 +1,50 @@
+{
+  "student-exam-score-regressor": {
+    "predicted_final_exam_score": 91.781
+  },
+  "insurance-fraud-classifier": {
+    "category": "Fraudulent",
+    "class_probabilities": {
+      "0": 0.031854,
+      "1": 0.968146
+    },
+    "predicted_class": 1
+  },
+  "bank-account-segmenter": {
+    "assigned_cluster": 2,
+    "segment": "High-balance established accounts"
+  },
+  "pharmacy-recommender": {
+    "cart": [
+      "Baby Lotion",
+      "Aloe Vera Gel"
+    ],
+    "meaning": "Co-purchase patterns; not medical advice or proof of product suitability.",
+    "recommendations": [
+      {
+        "best_rule": "R05",
+        "item_id": "D15",
+        "item_name": "Baby Diapers",
+        "lift": 4.450861700612449,
+        "matching_rules": [
+          "R05"
+        ],
+        "pharmacist_review": false,
+        "rule_confidence": 0.6102941176470589,
+        "support": 0.08266932270916334
+      },
+      {
+        "best_rule": "R07",
+        "item_id": "D08",
+        "item_name": "Sunscreen SPF50",
+        "lift": 4.074805029444533,
+        "matching_rules": [
+          "R07"
+        ],
+        "pharmacist_review": false,
+        "rule_confidence": 0.5776699029126214,
+        "support": 0.07901726427622842
+      }
+    ]
+  }
+}

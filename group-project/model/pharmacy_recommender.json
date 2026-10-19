@@ -1,0 +1,194 @@
+{
+  "cleaned_rules": [
+    {
+      "rule_id": "R01",
+      "antecedent": [
+        "D04",
+        "D05"
+      ],
+      "consequent": [
+        "D03"
+      ],
+      "confidence": 0.8595041322314049,
+      "lift": 6.3607529392653355,
+      "support": 0.034528552456839307
+    },
+    {
+      "rule_id": "R02",
+      "antecedent": [
+        "D03",
+        "D05"
+      ],
+      "consequent": [
+        "D04"
+      ],
+      "confidence": 0.8455284552845528,
+      "lift": 5.992309899569583,
+      "support": 0.034528552456839307
+    },
+    {
+      "rule_id": "R03",
+      "antecedent": [
+        "D11",
+        "D17"
+      ],
+      "consequent": [
+        "D10"
+      ],
+      "confidence": 0.7916666666666666,
+      "lift": 5.494239631336405,
+      "support": 0.025232403718459494
+    },
+    {
+      "rule_id": "R04",
+      "antecedent": [
+        "D10",
+        "D11"
+      ],
+      "consequent": [
+        "D17"
+      ],
+      "confidence": 0.76,
+      "lift": 5.424454976303318,
+      "support": 0.025232403718459494
+    },
+    {
+      "rule_id": "R05",
+      "antecedent": [
+        "D14"
+      ],
+      "consequent": [
+        "D15"
+      ],
+      "confidence": 0.6102941176470589,
+      "lift": 4.450861700612449,
+      "support": 0.08266932270916334
+    },
+    {
+      "rule_id": "R06",
+      "antecedent": [
+        "D03"
+      ],
+      "consequent": [
+        "D04"
+      ],
+      "confidence": 0.6068796068796068,
+      "lift": 4.300991472756178,
+      "support": 0.08200531208499336
+    },
+    {
+      "rule_id": "R07",
+      "antecedent": [
+        "D09"
+      ],
+      "consequent": [
+        "D08"
+      ],
+      "confidence": 0.5776699029126214,
+      "lift": 4.074805029444533,
+      "support": 0.07901726427622842
+    },
+    {
+      "rule_id": "R08",
+      "antecedent": [
+        "D13"
+      ],
+      "consequent": [
+        "D12"
+      ],
+      "confidence": 0.5763546798029557,
+      "lift": 4.133286418015483,
+      "support": 0.07768924302788845
+    },
+    {
+      "rule_id": "R09",
+      "antecedent": [
+        "D06"
+      ],
+      "consequent": [
+        "D07"
+      ],
+      "confidence": 0.5743073047858942,
+      "lift": 4.118603814321699,
+      "support": 0.07569721115537849
+    },
+    {
+      "rule_id": "R10",
+      "antecedent": [
+        "D17"
+      ],
+      "consequent": [
+        "D10"
+      ],
+      "confidence": 0.5734597156398105,
+      "lift": 3.979863279970297,
+      "support": 0.08034528552456839
+    },
+    {
+      "rule_id": "R11",
+      "antecedent": [
+        "D16"
+      ],
+      "consequent": [
+        "D05"
+      ],
+      "confidence": 0.5614457831325301,
+      "lift": 3.322347148909982,
+      "support": 0.07735723771580345
+    }
+  ],
+  "recommendation_lookup": {
+    "D04|D05": [
+      0
+    ],
+    "D03|D05": [
+      1
+    ],
+    "D11|D17": [
+      2
+    ],
+    "D10|D11": [
+      3
+    ],
+    "D14": [
+      4
+    ],
+    "D03": [
+      5
+    ],
+    "D09": [
+      6
+    ],
+    "D13": [
+      7
+    ],
+    "D06": [
+      8
+    ],
+    "D17": [
+      9
+    ],
+    "D16": [
+      10
+    ]
+  },
+  "item_id_to_name": {
+    "D10": "Reading Glasses",
+    "D17": "Reading Puzzle Book",
+    "D11": "Eye Drops",
+    "D14": "Baby Lotion",
+    "D15": "Baby Diapers",
+    "D06": "Hand Sanitizer",
+    "D07": "Face Masks",
+    "D03": "Cold & Flu Syrup",
+    "D04": "Tissues",
+    "D05": "Vitamin C Tablets",
+    "D16": "Multivitamin Gummies",
+    "D12": "Bandages",
+    "D02": "Ibuprofen",
+    "D08": "Sunscreen SPF50",
+    "D13": "Antiseptic Cream",
+    "D09": "Aloe Vera Gel",
+    "D01": "Paracetamol"
+  }
+}

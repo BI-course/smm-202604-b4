@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>B4 · Model validation</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f5f0;color:#1f3733;font:16px/1.5 system-ui,sans-serif}main{max-width:960px;margin:50px auto;padding:0 24px}header{margin-bottom:30px}h1{font-size:38px;letter-spacing:-1.5px;margin:8px 0}small{color:#57716b}nav{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0}button{cursor:pointer;border:1px solid #c5d3c9;background:white;color:#24463c;padding:12px 18px;border-radius:10px;font:inherit}button[aria-selected=true],button[type=submit]{background:#245d49;color:white}section{background:white;padding:28px;border:1px solid #d9e1d8;border-radius:18px}#fields{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0}label{display:grid;gap:6px;font-size:14px}input,select{padding:10px;border:1px solid #bfcfc5;border-radius:7px;font:inherit;width:100%}#result{white-space:pre-wrap;margin-top:22px;padding:18px;border-radius:10px;background:#edf5ef;overflow:auto}#result[hidden]{display:none}.error{color:#a21f2b}@media(max-width:640px){#fields{grid-template-columns:1fr}h1{font-size:30px}main{margin:24px auto}}
+</style>
+<main><header><small>B4 / BUSINESS INTELLIGENCE II</small><h1>Try a model. Review the result.</h1><p>Four models from your group's class work, using synthetic teaching data.</p></header><nav id="tabs" aria-label="Choose model"></nav><section><h2 id="title"></h2><p id="description"></p><form id="form"><div id="fields"></div><button type="submit">Make prediction</button></form><div id="result" role="status" hidden></div></section></main>
+<script>
+let schemas, active;
+const tabs=document.querySelector('#tabs'), fields=document.querySelector('#fields'), result=document.querySelector('#result');
+function choose(key){active=key;const spec=schemas[key];document.querySelector('#title').textContent=spec.title;document.querySelector('#description').textContent=spec.description;result.hidden=true;fields.replaceChildren();
+for(const button of tabs.children)button.setAttribute('aria-selected',String(button.dataset.key===key));
+for(const field of spec.fields){const label=document.createElement('label');label.textContent=field.label;let input;
+if(field.options){input=document.createElement('select');for(const value of field.options){const option=document.createElement('option');option.textContent=value;option.value=value;input.append(option);}}
+else{input=document.createElement('input');input.type=field.name==='cart'?'text':'number';input.step='any';}
+input.name=field.name;input.value=field.default;input.required=true;label.append(input);fields.append(label);}}
+document.querySelector('#form').addEventListener('submit',async event=>{event.preventDefault();const payload={};const data=new FormData(event.currentTarget);for(const field of schemas[active].fields){const value=data.get(field.name);payload[field.name]=field.name==='cart'?value.split(',').map(s=>s.trim()).filter(Boolean):field.options?value:Number(value);}result.hidden=false;result.textContent='Making prediction…';result.className='';
+try{const response=await fetch(`/api/v1/models/${active}/predictions`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});const output=await response.json();if(!response.ok)throw new Error(output.error||'Prediction failed');result.textContent=JSON.stringify(output,null,2);}catch(error){result.className='error';result.textContent=error.message;}});
+fetch('/demo-assets/schemas.json').then(response=>{if(!response.ok)throw new Error('Unable to load model forms');return response.json();}).then(data=>{schemas=data;for(const [key,spec]of Object.entries(data)){const button=document.createElement('button');button.type='button';button.textContent=spec.title;button.dataset.key=key;button.onclick=()=>choose(key);tabs.append(button);}choose(Object.keys(data)[0]);}).catch(error=>{result.hidden=false;result.textContent=error.message;});
+</script></html>

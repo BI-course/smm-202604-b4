@@ -1,0 +1,3 @@
+-r requirements.txt
+mlxtend==0.23.4
+matplotlib

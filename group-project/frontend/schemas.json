@@ -1,0 +1,230 @@
+{
+  "student-exam-score-regressor": {
+    "title": "Exam score",
+    "description": "Estimate a final exam score from a student profile.",
+    "fields": [
+      {
+        "name": "study_hours_per_week",
+        "label": "Study Hours Per Week",
+        "options": null,
+        "default": 15.0
+      },
+      {
+        "name": "attendance_rate_pct",
+        "label": "Attendance Rate (%)",
+        "options": null,
+        "default": 85.0
+      },
+      {
+        "name": "previous_gpa",
+        "label": "Previous GPA",
+        "options": null,
+        "default": 3.0
+      },
+      {
+        "name": "sleep_hours_per_night",
+        "label": "Sleep Hours Per Night",
+        "options": null,
+        "default": 7.0
+      },
+      {
+        "name": "extracurricular_activities_count",
+        "label": "Extracurricular Activities Count",
+        "options": null,
+        "default": 2
+      },
+      {
+        "name": "stress_level_score",
+        "label": "Stress Level Score",
+        "options": null,
+        "default": 4
+      },
+      {
+        "name": "tutoring_hours_per_week",
+        "label": "Tutoring Hours Per Week",
+        "options": null,
+        "default": 2.0
+      },
+      {
+        "name": "internet_access_quality",
+        "label": "Internet Access Quality",
+        "options": [
+          "Average",
+          "Excellent",
+          "Good",
+          "Poor"
+        ],
+        "default": "Good"
+      },
+      {
+        "name": "study_group_participation",
+        "label": "Study Group Participation",
+        "options": [
+          "No",
+          "Yes"
+        ],
+        "default": "Yes"
+      },
+      {
+        "name": "parental_education_level",
+        "label": "Parental Education Level",
+        "options": [
+          "Bachelor's",
+          "Doctorate",
+          "High School",
+          "Master's"
+        ],
+        "default": "Bachelor's"
+      }
+    ]
+  },
+  "insurance-fraud-classifier": {
+    "title": "Insurance claim",
+    "description": "Classify a synthetic insurance claim using your saved logistic-regression pipeline.",
+    "fields": [
+      {
+        "name": "policy_type",
+        "label": "Policy Type",
+        "options": [
+          "Auto",
+          "Health",
+          "Life",
+          "Property"
+        ],
+        "default": "Auto"
+      },
+      {
+        "name": "claim_type",
+        "label": "Claim Type",
+        "options": [
+          "Collision",
+          "Fire",
+          "Liability",
+          "Medical",
+          "Theft"
+        ],
+        "default": "Collision"
+      },
+      {
+        "name": "witnesses_present",
+        "label": "Witnesses Present",
+        "options": [
+          "No",
+          "Yes"
+        ],
+        "default": "Yes"
+      },
+      {
+        "name": "agent_flagged_history",
+        "label": "Agent Flagged History",
+        "options": [
+          "No",
+          "Yes"
+        ],
+        "default": "Yes"
+      },
+      {
+        "name": "claimant_age",
+        "label": "Claimant Age",
+        "options": null,
+        "default": 45
+      },
+      {
+        "name": "policy_tenure_years",
+        "label": "Policy Tenure Years",
+        "options": null,
+        "default": 3.5
+      },
+      {
+        "name": "prior_claims_count",
+        "label": "Prior Claims Count",
+        "options": null,
+        "default": 2
+      },
+      {
+        "name": "days_to_report_claim",
+        "label": "Days To Report Claim",
+        "options": null,
+        "default": 12
+      },
+      {
+        "name": "claim_amount_kes",
+        "label": "Claim Amount (KES)",
+        "options": null,
+        "default": 850000.0
+      },
+      {
+        "name": "claim_amount_to_policy_limit_ratio",
+        "label": "Claim Amount To Policy Limit Ratio",
+        "options": null,
+        "default": 0.65
+      },
+      {
+        "name": "customer_credit_score",
+        "label": "Customer Credit Score",
+        "options": null,
+        "default": 620.0
+      },
+      {
+        "name": "police_report_missing",
+        "label": "Police Report Missing (0 = no, 1 = yes)",
+        "options": null,
+        "default": 0
+      },
+      {
+        "name": "credit_score_missing",
+        "label": "Credit Score Missing (0 = no, 1 = yes)",
+        "options": null,
+        "default": 0
+      }
+    ]
+  },
+  "bank-account-segmenter": {
+    "title": "Bank accounts",
+    "description": "Assign a new account to one of the three trained segments.",
+    "fields": [
+      {
+        "name": "account_balance_kes",
+        "label": "Account Balance (KES)",
+        "options": null,
+        "default": 3200000.0
+      },
+      {
+        "name": "transactions_per_month",
+        "label": "Transactions Per Month",
+        "options": null,
+        "default": 7.0
+      },
+      {
+        "name": "years_as_customer",
+        "label": "Years As Customer",
+        "options": null,
+        "default": 10.0
+      },
+      {
+        "name": "digital_banking_usage_score",
+        "label": "Digital Banking Usage Score",
+        "options": null,
+        "default": 55.0
+      }
+    ]
+  },
+  "pharmacy-recommender": {
+    "title": "Pharmacy basket",
+    "description": "Explore products bought together in the synthetic receipt data.",
+    "fields": [
+      {
+        "name": "cart",
+        "label": "Products in basket (comma separated)",
+        "default": "Baby Lotion, Aloe Vera Gel",
+        "options": null
+      },
+      {
+        "name": "top_n",
+        "label": "Maximum suggestions",
+        "default": 3,
+        "options": null
+      }
+    ]
+  }
+}

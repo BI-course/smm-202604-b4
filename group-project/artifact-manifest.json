@@ -1,0 +1,26 @@
+{
+  "recovery": "Three artifacts rebuilt offline from original notebook recipes; fraud pipeline recovered unchanged from Drive",
+  "checks": {
+    "regression_test_rmse": 6.494068060016367,
+    "bank_cluster_sizes": [
+      60,
+      299,
+      341
+    ],
+    "pharmacy_training_receipts": 3012,
+    "pharmacy_cleaned_rules": 11
+  },
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.5.2",
+    "mlxtend": "0.23.4"
+  },
+  "model_sha256": {
+    "bank_segmentation.joblib": "16a8ec8c05dccdfd1eb43fda7471e38458653771ff8958ac0df2424c896d5384",
+    "exam_score_regressor.joblib": "0b8f4bf6361333b24ccfdaa56b539debd190d0c13624650834ad80a20645cf4f",
+    "fraud_logreg_pipeline.pkl": "a9364b1faf1633d0114561cb90dfc77e6fcad8d4d170e2bb8f3cf474ca64df47",
+    "pharmacy_recommender.json": "5dcbb4fc29f597fde2ade692014f907f67244d1c8c8c53847cf30f31e4bf9140"
+  }
+}

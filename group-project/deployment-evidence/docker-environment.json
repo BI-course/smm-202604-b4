@@ -1,0 +1,32 @@
+{
+  "engine_version": "29.4.3",
+  "python": "Python 3.12.15",
+  "gunicorn": "gunicorn (version 26.2.0)",
+  "nginx": "nginx version: nginx/1.30.6",
+  "services": [
+    {
+      "name": "b4-model-validation-api-1",
+      "service": "api",
+      "state": "running",
+      "ports": "8000/tcp"
+    },
+    {
+      "name": "b4-model-validation-nginx-1",
+      "service": "nginx",
+      "state": "running",
+      "ports": "127.0.0.1:8081->80/tcp"
+    }
+  ],
+  "artifact_sha256": [
+    "16a8ec8c05dccdfd1eb43fda7471e38458653771ff8958ac0df2424c896d5384  model/bank_segmentation.joblib",
+    "0b8f4bf6361333b24ccfdaa56b539debd190d0c13624650834ad80a20645cf4f  model/exam_score_regressor.joblib",
+    "a9364b1faf1633d0114561cb90dfc77e6fcad8d4d170e2bb8f3cf474ca64df47  model/fraud_logreg_pipeline.pkl",
+    "5dcbb4fc29f597fde2ade692014f907f67244d1c8c8c53847cf30f31e4bf9140  model/pharmacy_recommender.json"
+  ],
+  "missing_input_check": {
+    "status_code": 400,
+    "response": {
+      "error": "Missing inputs: study_hours_per_week, attendance_rate_pct, previous_gpa, sleep_hours_per_night, extracurricular_activities_count, stress_level_score, tutoring_hours_per_week, internet_access_quality, study_group_participation, parental_education_level"
+    }
+  }
+}

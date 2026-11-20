@@ -1,0 +1,36 @@
+$kind: http-request
+description: ""
+url: http://127.0.0.1:5001/api/v1/models/insurance-fraud-classifier/predictions
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"policy_type\": \"Auto\",\r
+
+    \    \"claim_type\": \"Collision\",\r
+
+    \    \"witnesses_present\": \"Yes\",\r
+
+    \    \"agent_flagged_history\": \"Yes\",\r
+
+    \    \"claimant_age\": 45,\r
+
+    \    \"policy_tenure_years\": 3.5,\r
+
+    \    \"prior_claims_count\": 2,\r
+
+    \    \"days_to_report_claim\": 12,\r
+
+    \    \"claim_amount_kes\": 850000.0,\r
+
+    \    \"claim_amount_to_policy_limit_ratio\": 0.65,\r
+
+    \    \"customer_credit_score\": 620.0,\r
+
+    \    \"police_report_missing\": 0,\r
+
+    \    \"credit_score_missing\": 0\r
+
+    \  }"
+order: 2000

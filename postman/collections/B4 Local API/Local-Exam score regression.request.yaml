@@ -1,0 +1,33 @@
+$kind: http-request
+url: http://127.0.0.1:5001/api/v1/models/student-exam-score-regressor/predictions
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"study_hours_per_week\": 15.0,\r
+
+    \  \"attendance_rate_pct\": 85.0,\r
+
+    \  \"previous_gpa\": 3.0,\r
+
+    \  \"sleep_hours_per_night\": 7.0,\r
+
+    \  \"extracurricular_activities_count\": 2,\r
+
+    \  \"stress_level_score\": 4,\r
+
+    \  \"tutoring_hours_per_week\": 2.0,\r
+
+    \  \"internet_access_quality\": \"Good\",\r
+
+    \  \"study_group_participation\": \"Yes\",\r
+
+    \  \"parental_education_level\": \"Bachelor's\"\r
+
+    }\r
+
+    \r
+
+    \r\n"
+order: 1000

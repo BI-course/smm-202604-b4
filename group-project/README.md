@@ -14,6 +14,7 @@ python_version: '3.12'
 The aim is to let a domain expert enter a new example, inspect a prediction, and give feedback. The apps load saved models; they do not retrain them when a user clicks a button.
 
 For a plain-language explanation and a submission-video outline, read [STUDENT-WALKTHROUGH.md](STUDENT-WALKTHROUGH.md).
+For the local regression and classification demonstration in Postman, see [LOCAL-API-POSTMAN-GUIDE.md](LOCAL-API-POSTMAN-GUIDE.md).
 
 **Selected submission tier: Intermediate.** The local API, Docker/Gunicorn/Nginx setup and public Render API have passed all four model examples. The required video and real member contributions still need to be added. Streamlit is an additional working demo; Hugging Face hosting is outside this selected tier.
 

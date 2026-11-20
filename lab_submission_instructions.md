@@ -16,9 +16,9 @@
 
 | **Details**                                                                                                                           | **Comment** |
 |:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Student ID**                                                                                                                        | 152245 |
+| **Name**                                                                                                                              | Raymond Mungai Benaiah       |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | Prepared and documented the local Postman demonstration for the exam-score regression and insurance-fraud classification endpoints, including saved requests and a quick-start guide. Learned how Postman sends JSON by POST to Flask and how the API returns numeric regression and classification results from saved artifacts. [Branch: raymond/local-api-postman-demo](https://github.com/BI-course/smm-202604-b4/tree/raymond/local-api-postman-demo). |
 
 **Member 3:**
 

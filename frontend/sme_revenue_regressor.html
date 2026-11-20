@@ -283,7 +283,8 @@
     } catch (err) {
       result.className = "show err";
       result.textContent = "Request failed: " + err.message +
-        " (is api.py running on http://127.0.0.1:5001 ?)";
+        " (is api.py running on http://127.0.0.1:5000 ?)";
+        //" (is api.py running on http://127.0.0.1:5001 ?)";
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = "Predict Monthly Revenue";

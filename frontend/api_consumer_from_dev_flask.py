@@ -24,6 +24,7 @@ probabilities, a cluster id, or a list of recommendations).
 import requests
 
 BASE_URL = "http://127.0.0.1:5000"
+#BASE_URL = "http://127.0.0.1:5001"
 
 HEADERS = {
     'Content-Type': 'application/json',  # This header tells the server that the payload is in JSON format

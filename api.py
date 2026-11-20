@@ -57,7 +57,7 @@ app = Flask(__name__)
 # ports our lab's frontend files are typically served from):
 CORS(app, resources={r"/api/*": {"origins": [
     "http://localhost:5000", "http://127.0.0.1:5000",
-    "http://localhost:5001", "http://127.0.0.1:5001",  # <- Added these two lines
+    "http://localhost:5001", "http://127.0.0.1:5001",  # <- Added this line
     "http://localhost:5500", "http://127.0.0.1:5500",
     "https://localhost:443", "https://127.0.0.1:443",
     "http://localhost:63342",  # VS Code Live Server extension
@@ -270,7 +270,8 @@ def recommend_products():
 # -----------------------------------------------------------------------
 if __name__ == "__main__":
     # Change port from 5000 to 5001 here
-    app.run(host="0.0.0.0", port=5001, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
+    #app.run(host="0.0.0.0", port=5001, debug=True)
 
 #if __name__ == "__main__":
     # Development server. debug=True gives auto-reload and an interactive

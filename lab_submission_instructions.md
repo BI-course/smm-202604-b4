@@ -44,6 +44,14 @@
 | **Name**                                                                                                                              |             |
 | **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
 
+**Member 6:**
+
+| **Details**                                                                                                                           | **Comment** |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
+| **Student ID**                                                                                                                        |             |
+| **Name**                                                                                                                              |             |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+
 ## Chosen Level of Difficulty
 
 **Implementation:** [Group B4 serving project](group-project/README.md), using `group-project/api.py` and the four artifacts in `group-project/model/`. The public Streamlit app and Render API have each been tested with all four models; other deployment requirements remain listed in [deployment status](group-project/deployment-status.json).

@@ -57,6 +57,7 @@ app = Flask(__name__)
 # ports our lab's frontend files are typically served from):
 CORS(app, resources={r"/api/*": {"origins": [
     "http://localhost:5000", "http://127.0.0.1:5000",
+    "http://localhost:5001", "http://127.0.0.1:5001",  # <- Added these two lines
     "http://localhost:5500", "http://127.0.0.1:5500",
     "https://localhost:443", "https://127.0.0.1:443",
     "http://localhost:63342",  # VS Code Live Server extension
@@ -268,11 +269,15 @@ def recommend_products():
 # Entry point
 # -----------------------------------------------------------------------
 if __name__ == "__main__":
+    # Change port from 5000 to 5001 here
+    app.run(host="0.0.0.0", port=5001, debug=True)
+
+#if __name__ == "__main__":
     # Development server. debug=True gives auto-reload and an interactive
     # debugger on errors -- convenient in class, but NEVER use debug=True in
     # a deployed/public environment (it can expose a remote code execution
     # console to anyone who can reach the server).
-    app.run(debug=True)
+    #app.run(debug=True)
 
     # Production-style alternative (no debugger, no auto-reload):
     # app.run(debug=False, host="0.0.0.0", port=5000)
@@ -280,3 +285,5 @@ if __name__ == "__main__":
     # HTTPS/TLS alternative for local development (requires a self-signed
     # certificate; see app_server_reverse_proxy_server_setup.md):
     # app.run(debug=False, ssl_context=("cert.pem", "key.pem"))
+
+

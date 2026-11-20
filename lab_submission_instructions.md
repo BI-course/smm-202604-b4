@@ -22,11 +22,11 @@
 
 **Member 3:**
 
-| **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details**                                                                                                                           | **Comment**                                                                                                                                       |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Student ID**                                                                                                                        | 170492                                                                                                                                            |
+| **Name**                                                                                                                              | Eghosa Edokpolo                                                                                                                                   |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I participated by handeling the clustering model from previous lab work, and integrating it into this group project to be served on the web view. |
 
 **Member 4:**
 

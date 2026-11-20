@@ -155,8 +155,8 @@
             <option selected>Secondary</option>
             <option>Certificate</option>
             <option>Diploma</option>
-            <option>Bachelor's</option>
-            <option>Master's</option>
+            <option>Bachelors</option>
+            <option>Masters</option>
             <option>Doctorate</option>
           </select>
         </div>
@@ -229,7 +229,7 @@
   const hostname = window.location.hostname || "127.0.0.1";  // hostname is "" for a file:// page
   const isSecure = protocol === "https:";
 
-  const API_ORIGIN = `${isSecure ? "https" : "http"}://${hostname}:${isSecure ? "443" : "5000"}`;
+  const API_ORIGIN = `${isSecure ? "https" : "http"}://${hostname}:${isSecure ? "443" : "5001"}`;
   const API_URL = `${API_ORIGIN}/api/v1/models/sme-revenue-regressor/predictions`;
 
   // const API_URL = "http://127.0.0.1:5000/api/v1/models/sme-revenue-regressor/predictions";
@@ -283,7 +283,7 @@
     } catch (err) {
       result.className = "show err";
       result.textContent = "Request failed: " + err.message +
-        " (is api.py running on http://127.0.0.1:5000 ?)";
+        " (is api.py running on http://127.0.0.1:5001 ?)";
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = "Predict Monthly Revenue";

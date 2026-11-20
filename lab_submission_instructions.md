@@ -48,9 +48,9 @@
 
 | **Details**                                                                                                                           | **Comment** |
 |:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Student ID**                                                                                                                        |      167071       |
+| **Name**                                                                                                                              | Cyrus Collins Gitonga            |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |    I set up and ran the group’s Flask API locally from the feature/b4-model-validation branch, tested the API’s input validation in Postman (an empty request returns HTTP 400 with the list of missing inputs), and reviewed PROVENANCE.md and artifact-manifest.json to explain where each model came from. I presented the error-handling, model-sources and closing section of the group video. I learned how an API should reject incomplete input instead of guessing, and how recording artifact checksums and library versions ensures that local, Docker and cloud deployments all serve the identical model.          |
 
 ## Chosen Level of Difficulty
 

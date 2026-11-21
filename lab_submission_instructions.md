@@ -2,9 +2,7 @@
 
 ## Student Details and Individual Member Contributions
 
-**Name of the team on GitHub Classroom: smm-202604-b4**
-
-**Link to video demonstration: https://drive.google.com/drive/folders/1m13ir2IIE--6NJZIrdMmpumt_oa8BT-0**
+**Name of the team on GitHub Classroom:smm-202604-b4**
 
 **Member 1:**
 
@@ -24,11 +22,11 @@
 
 **Member 3:**
 
-| **Details**                                                                                                                           | **Comment**                                                                                                                                                                                                                                                                                                       |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Student ID**                                                                                                                        | 170492                                                                                                                                                                                                                                                                                                            |
-| **Name**                                                                                                                              | Eghosa Edokpolo                                                                                                                                                                                                                                                                                                   |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I participated by handeling the clustering model from previous lab work, and integrating it into this group project to be served on the web view. I also handled  and verified that the clustering and association rule mining models where predicting properly with varied payloads based on how it was trained. |
+| **Details**                                                                                                                           | **Comment**                                                                                                                                       |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Student ID**                                                                                                                        | 170492                                                                                                                                            |
+| **Name**                                                                                                                              | Eghosa Edokpolo                                                                                                                                   |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I participated by handeling the clustering model from previous lab work, and integrating it into this group project to be served on the web view. |
 
 **Member 4:**
 

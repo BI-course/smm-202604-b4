@@ -2,7 +2,9 @@
 
 ## Student Details and Individual Member Contributions
 
-**Name of the team on GitHub Classroom:smm-202604-b4**
+**Name of the team on GitHub Classroom: smm-202604-b4**
+
+**Lab video demonstration link: https://drive.google.com/drive/folders/1m13ir2IIE--6NJZIrdMmpumt_oa8BT-0**
 
 **Member 1:**
 
@@ -26,7 +28,7 @@
 |:--------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Student ID**                                                                                                                        | 170492                                                                                                                                            |
 | **Name**                                                                                                                              | Eghosa Edokpolo                                                                                                                                   |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I participated by handeling the clustering model from previous lab work, and integrating it into this group project to be served on the web view. |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I participated by handeling the clustering model from previous lab work, and integrating it into this group project to be served on the web view. As well as handeling and verifying that the trained models for clustering and association rule mining are predicitng properly even with varied inputs. |
 
 **Member 4:**
 

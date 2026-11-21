@@ -42,9 +42,9 @@
 
 | **Details**                                                                                                                           | **Comment** |
 |:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Student ID**                                                                                                                        | 167747            |
+| **Name**                                                                                                                              | Patrick   Otieno            |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I participated by handeling the classification and regression model from previous lab work. I  handeled and verified that the trained models for classification and regression are predicitng properly even with varied inputs.            |
 
 **Member 6:**
 

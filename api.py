@@ -56,7 +56,7 @@ app = Flask(__name__)
 # Option C (the one actually in use here -- allow localhost/127.0.0.1 on the
 # ports our lab's frontend files are typically served from):
 CORS(app, resources={r"/api/*": {"origins": [
-    "http://localhost:5000", "http://127.0.0.1:5000",
+    #"http://localhost:5000", "http://127.0.0.1:5000",
     "http://localhost:5001", "http://127.0.0.1:5001",  # <- Added this line
     "http://localhost:5500", "http://127.0.0.1:5500",
     "https://localhost:443", "https://127.0.0.1:443",
@@ -191,7 +191,7 @@ def predict_credit_risk():
 # 3. CLUSTERING -- assign a new mall customer to an existing segment
 
 # Sample request (cURL):
-#   curl -X POST http://127.0.0.1:5000/api/v1/models/mall-customer-segmenter/predictions \
+#   curl -X POST http://127.0.0.1:5001/api/v1/models/mall-customer-segmenter/predictions \
 #        -H "Content-Type: application/json" \
 #        -d '{"Age": 27, "Annual Income (k$)": 45, "Spending Score (1-100)": 72}'
 #

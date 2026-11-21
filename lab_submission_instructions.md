@@ -34,9 +34,9 @@
 
 | **Details**                                                                                                                           | **Comment** |
 |:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Student ID**                                                                                                                        |    150216   |
+| **Name**                                                                                                                              |  Albert Oruma|
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | Containerization: Dockerized the Flask API with Gunicorn and fronted it with an Nginx reverse proxy using docker-compose.yaml + docker-compose-dev.yaml. Learned multi-stage Docker builds, bind-mounted volumes, service networking (expose vs ports), and TLS termination at the proxy.   (https://github.com/oruma1/smm-202604-b4)   |
 
 **Member 5:**
 
